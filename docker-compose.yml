@@ -1,14 +1,10 @@
-version: '3.8'  # Use the latest version of docker-compose
-
 services:
   currency-exchange-api:
     build:
-      context: .  # Path to the Dockerfile
+      context: .
     ports:
-      - "3001:3001"  # Map port 3001 of the container to port 3001 of the host
+      - "3001:3001"
     environment:
       - API_URL=https://v6.exchangerate-api.com/v6/ab979c01aaac59fa64ac5247/latest/USD
       - API_KEY=ab979c01aaac59fa64ac5247
-    volumes:
-      - .:/usr/src/app  # Mount the current directory to the working directory in the container
-    restart: unless-stopped  # Restart policy
+    restart: unless-stopped
