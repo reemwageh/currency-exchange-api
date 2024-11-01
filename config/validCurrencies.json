@@ -1,0 +1,9 @@
+{
+    "validCurrencies": [
+      "USD", "EUR", "GBP", "JPY", "AUD", 
+      "CAD", "CHF", "CNY", "NZD", "SEK", 
+      "SGD", "MXN", "HKD", "NOK", "ZAR", 
+      "INR", "BRL", "RUB", "TRY", "PLN","EGP"
+    ]
+  }
+  
